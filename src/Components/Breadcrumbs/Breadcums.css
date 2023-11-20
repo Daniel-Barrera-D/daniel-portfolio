@@ -1,0 +1,20 @@
+.breadcums-nav {
+    display: flex;
+}
+
+h4 {
+    font-size: var(--text-sm);
+}
+
+.breadcums-element {
+    text-decoration: none;
+}
+
+.breadcums-element>h4 {
+    transition: 0.15s all ease-in;
+}
+
+.breadcums-element>h4:hover {
+    transition: 0.15s all ease-in;
+    color: var(--accent-color);
+}

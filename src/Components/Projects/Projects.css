@@ -1,0 +1,27 @@
+.section-projects {
+    max-width: 1150px;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.section-title {
+    display: flex;
+    justify-content: center;
+    margin: 5rem 0 1rem;
+    font-size: var(--text-xl);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(min(30rem,100%), 1fr));
+    gap: 2rem;
+}
+
+@media screen and (max-width: 480px){
+
+    .section-projects {
+        margin-top: 10px;
+        padding: 0 16px;
+        gap: 2.5rem;
+    }
+}

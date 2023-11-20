@@ -1,24 +1,39 @@
-import logo from './logo.svg';
 import './App.css';
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './Components/Header/Header';
+import Home from './Pages/Home';
+import DetailProject from './Pages/DetailProject';
+import Footer from './Components/Footer/Footer.jsx';
+import { projectsData } from './ProjectData.js';
+import NotFound404 from './Pages/NotFound404.jsx';
+import AnimateContainer from './Components/AnimateContainer/AnimateContainer.jsx';
+import RefsProvider from './Context/RefsProvider.jsx';
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <RefsProvider>
+          <Router>
+            <Header />
+              <Routes>
+                <Route path='/' element={ 
+                  <>
+                    <AnimateContainer>
+                      <Home />
+                    </AnimateContainer>
+                  </>
+                }/>
+                <Route path='/project/:path' element={
+                  <>
+                    <AnimateContainer>
+                      <DetailProject projects={projectsData}/>
+                    </AnimateContainer>
+                  </>
+                }/>
+                <Route path='*' element={ <NotFound404 /> }/>
+              </Routes>
+            <Footer />
+          </Router>
+    </RefsProvider>
   );
 }
 

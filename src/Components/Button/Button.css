@@ -1,0 +1,52 @@
+.about-button {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 7px;
+    transition: .3s all ease;
+}
+
+.medium {
+    height: 44px;
+}
+
+.primary {
+    background-color: var(--accent-color);
+    color: var(--bgcolor);
+    font-weight: 700;
+}
+
+.secondary {
+    background-color: var(--dark-secondary);
+    color: var(--text-secondary);
+    font-weight: 700;
+}
+
+.small {
+    width: max-content;
+    padding: 9px 16px;
+    height: 30px;
+    color: #FFF;
+    font-weight: 500;
+    border-radius: .8rem;
+    font-size: var(--text-xs);
+    gap: 6px;
+}
+
+.icono {
+    padding-top: 3px;
+}
+
+.primary:hover{
+    background-color: #5EC0CD;
+}
+
+.secondary:hover {
+    background-color: #213033;
+}
+
+.small:hover {
+    background-color: #213033;
+}

@@ -1,0 +1,30 @@
+.section-notfound {
+    max-width: 1150px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-notfound > a {
+    width: 30%;
+}
+
+.section-error {
+    font-size: var(--text-2xl);
+}
+
+.section-message {
+    color: var(--text-secondary);
+    margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 480px) {
+    .section-notfound {
+        gap: 2rem;
+    }
+
+    .section-notfound > a {
+        margin-bottom: 5rem;
+    }
+}

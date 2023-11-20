@@ -1,0 +1,73 @@
+.work-card {
+    position: relative;
+    overflow: hidden;
+    height: 455px;
+    border-radius: 1.2rem;
+}
+
+.card-image {
+    display: block;
+    /* width: 100%; */
+    height: 100%;
+    object-fit: cover;
+    transition: all .3s ease-in-out;
+    border: 0.1px solid black;
+    border-radius: 1.2rem;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    /* pointer-events: none; */
+    overflow: hidden;
+    /* border-radius: 1.2rem; */
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    background: linear-gradient(to bottom,rgba(0,0,0,.02) 0%,rgba(0,0,0,.8) 100%);
+    backdrop-filter: blur(5px);
+}
+
+.card-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.card-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.card-footer {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card-title {
+    font-size: var(--text-base);
+}
+
+.card-description {
+    font-size: var(--text-sm);
+    color: #869099;
+    font-weight: 500;
+}
+
+.card-image:hover {
+    transform: scale(1.07);
+}
+
+.work-card:hover .card-info {
+    opacity: 1;
+}

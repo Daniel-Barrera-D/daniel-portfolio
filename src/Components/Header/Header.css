@@ -1,0 +1,53 @@
+.header {
+    display: flex;
+    background-color: var(--bgcolor);
+    position: sticky;
+    width: 100%;
+    flex-flow: row wrap;
+    max-width: 1150px;
+    margin: auto;
+    padding: 1.5rem 1px;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+}
+
+.header-name {
+    z-index: 1;
+    text-decoration: none;
+    transition: 0.15s all ease-in;
+    font-size: var(--text-sm);
+    font-weight: 700;
+}
+
+.header-name:hover {
+    opacity: 0.75;
+}
+
+.visible {
+    top: 0;
+    transition: top .4s ease-out;
+}
+
+.hidden {
+    top: -80px;
+    transition: top .4s ease-out;
+}
+
+@media screen and (max-width: 480px){
+
+    .header {
+        padding: 1rem 1.5rem;
+        justify-content: space-between;
+    }
+
+    .visible {
+        top: 0;
+        z-index: 1;
+    }
+
+    .hidden {
+        top: -80px;
+        transition: top .4s ease-out;
+    }
+}
