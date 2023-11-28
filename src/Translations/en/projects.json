@@ -1,0 +1,20 @@
+{
+    "alurageek": {
+        "name": "Alura Geek",
+        "category": "Full Stack Application",
+        "description": "Web application of what would be an ecommerce developed as a challenge by Alura Latam.",
+        "longDescription": "<p>This was a frontend application and a small backend part, it was a challenge set by Alura Latam in her frontend web development teaching.</p><p>This application has an administrator view, where you can create and delete products that will be sold.</p><p>To simulate the database, a fake API was used through a .json file, which would then use its data to show the products to the client.</p>"
+    },
+    "encryptor": {
+        "name": "Text Encryptor",
+        "category": "Frontend Application",
+        "description": "Web application to encrypt or decrypt texts.",
+        "longDescription": "<p>Application where the user enters a text, this must be in lowercase and without accents, what it will do is to encrypt the text that the user has typed.</p><p>It has the option to copy to the clipboard the result and it will be automatically copied to the text input for a better user experience, in case you want to encrypt or decrypt a result according to the occasion.</p><p>Developed with HTML, CSS and JavaScript.</p>"
+    },
+    "movieTrailers": {
+        "name": "Movie Trailers",
+        "category": "Frontend Application",
+        "description": "Web application to view movie trailers.",
+        "longDescription": "<p>Web application where users can view movie trailers, classified by genre.</p><p>The application has two different routes, where in one you can add new movie trailers and in the other new genres, both through a form.</p><p>Developed in React and making use of the MUI library.</p>"
+    }
+}

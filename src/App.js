@@ -4,11 +4,15 @@ import Header from './Components/Header/Header';
 import Home from './Pages/Home';
 import DetailProject from './Pages/DetailProject';
 import Footer from './Components/Footer/Footer.jsx';
-import { projectsData } from './ProjectData.js';
+// import { projectsData } from './ProjectData.js';
 import NotFound404 from './Pages/NotFound404.jsx';
 import AnimateContainer from './Components/AnimateContainer/AnimateContainer.jsx';
 import RefsProvider from './Context/RefsProvider.jsx';
+import ProjectData from './ProjectData';
+
 function App() {
+
+  const projectsData = ProjectData();
 
   return (
     <RefsProvider>

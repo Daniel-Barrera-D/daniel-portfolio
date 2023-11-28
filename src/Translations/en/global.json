@@ -1,0 +1,24 @@
+{
+    "nav": {
+        "home": "Home",
+        "skills": "Skills",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "breadcums": {
+        "home": "Home",
+        "projects": "Projects"
+    },
+    "section-skills": {
+        "title": "My Skills"
+    },
+    "section-projects": {
+        "title": "My Projects"
+    },
+    "button-card": {
+        "text": "See details"
+    },
+    "tech-stack": {
+        "text": "Tech Stack"
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "nav": {
+        "home": "Inicio",
+        "skills": "Habilidades",
+        "projects": "Proyectos",
+        "contact": "Contacto"
+    },
+    "breadcums": {
+        "home": "Inicio",
+        "projects": "Proyectos"
+    },
+    "section-skills": {
+        "title": "Mis Habilidades"
+    },
+    "section-projects": {
+        "title": "Mis Projectos"
+    },
+    "button-card": {
+        "text": "Ver detalles"
+    },
+    "tech-stack": {
+        "text": "Conjunto de Tecnologías"
+    }
+}

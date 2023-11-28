@@ -3,13 +3,14 @@ import Breadcumbs from "../Components/Breadcrumbs/Breadcumbs";
 import '../Assets/CSS/DetailProject.css';
 import { Link, useParams } from "react-router-dom";
 import NotFound404 from "./NotFound404";
-import { projectsData } from "../ProjectData";
 import useSEO from "../Hooks/useSEO";
+import ProjectData from "../ProjectData";
+import { useTranslation } from "react-i18next";
 
 const DetailProject = ({ projects }) => {
 
     const { path } = useParams();
-
+    const { t } = useTranslation("global");
     const project = projects.find(project => project.path === path);
 
     useEffect(() => {
@@ -21,6 +22,8 @@ const DetailProject = ({ projects }) => {
     })
 
     if(!project) return <NotFound404 />;
+
+    const projectsData = ProjectData();
 
     const projectIndex = projectsData.findIndex((project) => project.path === path);
     const nextProjectIndex = (projectIndex + 1) % projectsData.length;
@@ -39,7 +42,7 @@ const DetailProject = ({ projects }) => {
                     <p dangerouslySetInnerHTML={{__html: project.longDescription}}></p>
                 </section>
                 <section className="project-detail-stack">
-                    <h3>Tech Stack</h3>
+                    <h3>{t("tech-stack.text")}</h3>
                     {project.tags.map((tag, index) => (
                         <span key={index} >{tag}{index === project.tags.length -1 ? '.' : ', '}</span>
                     ))}

@@ -2,17 +2,19 @@ import React, { useContext } from "react";
 import './Contact.css';
 import Form from "../Form/Form";
 import { RefsContext } from "../../Context/RefsProvider";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
 
     const { contactRef } = useContext(RefsContext);
+    const { t } = useTranslation('contact');
 
     return(
         <section className="contact-section" ref={contactRef}>
             <div className="contact-info">
-                <h2 className="contact-title">Contact Me</h2>
-                <p className="contact-description">You can contact me at any time. I will get back to you as soon as I can!</p>
-                <h3 className="contact-email-title">Email</h3>
+                <h2 className="contact-title">{t("section-contact.title")}</h2>
+                <p className="contact-description">{t("section-contact.description")}</p>
+                <h3 className="contact-email-title">{t("section-contact.title-email")}</h3>
                 <p className="contact-email-text">barreradeviadaniel@gmail.com</p>
                 <div className="contact-social-media">
                     <a href="https://github.com/Daniel-Barrera-D" target="_blank" rel="noreferrer">

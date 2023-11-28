@@ -7,6 +7,7 @@ import TextArea from "../TextArea/TextArea";
 import Confeti from "../Confeti/Confeti";
 import useScrollToRef from "../../Hooks/useScrollToRef";
 import { RefsContext } from "../../Context/RefsProvider";
+import { useTranslation } from "react-i18next";
 
 const Form = () => {
 
@@ -14,6 +15,7 @@ const Form = () => {
     const [confetti, showConfetti] = useState(false);
     const { goToRef } = useScrollToRef();
     const { aboutMeRef } = useContext(RefsContext);
+    const { t } = useTranslation("form");
 
     const showConfettiOnAction = () => {
         showConfetti(true);
@@ -38,11 +40,11 @@ const Form = () => {
         <form ref={form} onSubmit={sendEmail} className="contact-form" action="" autoComplete="off">
             {confetti ? <Confeti /> : <></>}
             <div className="contact-form-group">
-                <Input text="Name" name="user_name"/>
-                <Input text="Email" name="user_email"/>
+                <Input text={t("form.input-1")} name="user_name"/>
+                <Input text={t("form.input-2")} name="user_email"/>
             </div>
-            <TextArea text="Message" name="message"/>
-            <button className="form-button">Send</button>
+            <TextArea text={t("form.text-area")} name="message"/>
+            <button className="form-button">{t("form.button")}</button>
         </form>
     )
 }

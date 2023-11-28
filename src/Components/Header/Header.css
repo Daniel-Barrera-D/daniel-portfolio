@@ -12,12 +12,30 @@
     z-index: 99;
 }
 
+.header-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 .header-name {
     z-index: 1;
     text-decoration: none;
     transition: 0.15s all ease-in;
     font-size: var(--text-sm);
     font-weight: 700;
+}
+
+.en {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: all .3s ease-out;
+}
+
+.es {
+    cursor: pointer;
+    opacity: 1;
+    transition: all .3s ease-out;
 }
 
 .header-name:hover {

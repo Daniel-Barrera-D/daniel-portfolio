@@ -1,0 +1,20 @@
+{
+    "alurageek": {
+        "name": "Alura Geek",
+        "category": "Aplicación Full Stack",
+        "description": "Aplicación web de lo que sería un ecommerce desarrollado como desafío por Alura Latam.",
+        "longDescription": "<p>Se trataba de una aplicación frontend y una pequeña parte backend, fue un reto planteado por Alura Latam en su enseñanza de desarrollo web frontend.</p><p>Esta aplicación tiene una vista de administrador, donde se pueden crear y eliminar los productos que se venderán.</p><p>Para simular la base de datos se utilizó una API falsa a través de un archivo .json, que luego usaría sus datos para mostrar los productos al cliente.</p>"
+    },
+    "encryptor": {
+        "name": "Encriptador de Texto",
+        "category": "Aplicación Front End",
+        "description": "Aplicación web para cifrar o descifrar textos.",
+        "longDescription": "<p>Aplicación donde el usuario introduce un texto, este debe estar en minúsculas y sin acentos, lo que hará es encriptar el texto que el usuario ha tecleado.</p><p>Tiene la opción de copiar al portapapeles el resultado y se copiará automáticamente a la entrada de texto para una mejor experiencia de usuario, en caso de que se quiera cifrar o descifrar un resultado según la ocasión.</p><p>Desarrollado con HTML, CSS y JavaScript.</p>"
+    },
+    "movieTrailers": {
+        "name": "MovieTrailers",
+        "category": "Aplicación Front End",
+        "description": "Aplicación web para ver trailers de películas.",
+        "longDescription": "<p>Aplicación web donde los usuarios pueden ver trailers de películas, clasificados por género.</p><p>La aplicación tiene dos rutas diferentes, en una puedes añadir nuevos trailers de películas y en la otra nuevos géneros, ambas a través de un formulario.</p><p>Desarrollado en React y haciendo uso de la librería MUI.</p>"
+    }
+}
