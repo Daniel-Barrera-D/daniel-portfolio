@@ -27,12 +27,14 @@
 }
 
 .en {
+    z-index: 1;
     cursor: pointer;
     opacity: 0.5;
     transition: all .3s ease-out;
 }
 
 .es {
+    z-index: 1;
     cursor: pointer;
     opacity: 1;
     transition: all .3s ease-out;

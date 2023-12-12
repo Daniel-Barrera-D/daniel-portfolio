@@ -40,8 +40,9 @@
 }
 
 .icon {
+    opacity: 1;
     fill: gray;
-    transition: .5s all ease;
+    transition: opacity .2s ease;
 }
 
 .about-buttons {
@@ -51,7 +52,8 @@
 }
 
 .icon:hover {
-    fill: #FFFFFF;
+    opacity: .7;
+    transition-delay: .1ms;
 }
 
 @media screen and (max-width: 480px){

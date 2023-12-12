@@ -20,7 +20,7 @@
 
 .secondary {
     background-color: var(--dark-secondary);
-    color: var(--text-secondary);
+    color: var(--text-button);
     font-weight: 700;
 }
 

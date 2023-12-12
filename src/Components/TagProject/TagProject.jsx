@@ -1,5 +1,5 @@
 import React from "react";
-import './TagProyec.css';
+import './TagProject.css';
 
 const TagProject = (props) => {
 

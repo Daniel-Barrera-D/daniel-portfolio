@@ -16,6 +16,13 @@ code {
 	--accent-color: #19A5B8;
 	--text-secondary: #A3ABB2;
 	--dark-secondary: #151E21;
+	--title-card: #ECEFF4;
+	--text-card: #869099;
+	--form-color: #151E21;
+	--text-button: #A3ABB2;
+	--border-card-skill: #151E21;
+	--nav-page-detail-project: #151E21;
+	--hover: #213033;
 
 	--text-xs: clamp(1rem, calc(1rem + 0vw), 1.2rem);
 	--text-sm: clamp(0.9rem, calc(1rem + 0.5vw), 1.1rem);
@@ -24,4 +31,17 @@ code {
 	--text-xl: clamp(1.8rem, calc(1rem + 2vw), 2.6rem);
 	--text-2xl: clamp(2rem, calc(1rem + 2.5vw), 3rem);
 	--text-3xl: clamp(2.5rem, calc(1rem + 12.5vw), 3.2rem);
+}
+
+[data-theme='light'] {
+	--bgcolor: #FAFAFA ;
+	--text-primary: #212121 ;
+	--text-secondary: #252222;
+	--dark-secondary: #2b3f46;
+	--text-card: #A3ABB2;
+	--form-color: #C8C8C8;
+	--text-button: #FAFAFA;
+	--border-card-skill: #A3ABB2;
+	--nav-page-detail-project: #C8C8C8;
+	--hover: #D8D8D8;
 }
