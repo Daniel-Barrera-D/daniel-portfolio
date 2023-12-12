@@ -5,7 +5,7 @@ import "./DarkMode.css";
 
 const DarkMode = () => {
 
-    const selectedTheme = localStorage.getItem("selectedTheme") || 'light';
+    const selectedTheme = localStorage.getItem("selectedTheme") || 'dark';
     document.querySelector("body").setAttribute('data-theme', selectedTheme);
     const [theme, setTheme] = useState(selectedTheme);
 
